@@ -4,11 +4,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
 
   <body>
+    
+    <form class="new-user-form">
+      <div class="new-user__field">
+        <label class="new-user__label">Nazwa</label>
+        <input type="text" name="name" placeholder="Wpisz swoje imię...">
+      </div>
+      <div class="new-user__field">
+        <label class="new-user__label">Opis osoby</label>
+        <textarea name="opis" placeholder="Dodaj opis osoby..."></textarea>
+      </div>
+      <div class="new-user__field">
+        <input type="submit" class="new-user__submit" value="Dodaj">
+      </div>
+      
+    </form>
+
     <ul class="users-list list"></ul>
+    
+
+
   </body>
 </html>

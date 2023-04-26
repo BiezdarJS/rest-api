@@ -9,7 +9,6 @@ users$.then(users => {
 function printUsers(users) {
 
  users.forEach(user => {
-
     const usersList = document.querySelector('.users-list');
     const newListItem = document.createElement('li');
     newListItem.classList.add('users-item');
