@@ -32,5 +32,37 @@
     margin: 25px auto;
   }
   
+}
+
+
+.edit {
+  &-form {
+    width: 100%;
+    max-width: 350px;
+    margin: 50px auto 0;
+    textarea {
+      width: 100%;
+      height: 200px;
+    }
+  }
+  &__field {
+    width: 100%;
+  }
+  &__label {
+    display: block;
+  }
+  &__submit {
+    background-color: #fff;
+    color: #000;
+    display: block;
+    margin: 25px auto;
+  }
   
+  
+}
+
+.users-item {
+  button {
+    margin: 0 5px;
+  }
 }
