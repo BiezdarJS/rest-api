@@ -1,12 +1,10 @@
 import { USERS_URL } from './base.js';
+import { getTheId } from './utils.js';
 
 // najpierw pobier rekord na podstawie ID i uzupełnij pola formularza danymi
 const editForm = document.querySelector('.edit-form');
 
-function getTheId(target) {
-  const userId = target.dataset.id;
-  return userId;
-}
+
 
 
 // w momencie kliknięcia w przycisk EDYTUJ

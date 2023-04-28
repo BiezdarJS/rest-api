@@ -1,9 +1,11 @@
 import { users$ } from './collection.js';
-import { createEditBtn } from './utils.js';
+import { createEditBtn, createDeleteBtn } from './utils.js';
 
 users$.then(users => {
   printUsers(users);
 });
+
+
 
 
 function printUsers(users) {
@@ -17,6 +19,9 @@ function printUsers(users) {
     // edit Btn
     const editBtn = createEditBtn(user);
     newListItem.appendChild(editBtn);
+    // delete Btn
+    const deleteBtn = createDeleteBtn(user);
+    newListItem.appendChild(deleteBtn);
     
     usersList.appendChild(newListItem);
     
